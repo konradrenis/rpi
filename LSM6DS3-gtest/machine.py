@@ -17,9 +17,9 @@ bz = random.randrange(-100,100)
 
 
 
-xp = 
-yp = 
-zp = 
+xp = 0
+yp = 0
+zp = 0
 
 xr = ax*xp+bx
 yr = ay*yp+by
