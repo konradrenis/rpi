@@ -15,7 +15,8 @@ point = Point("mem1") \
 .field("temperatura", 36) \
 .field("cisnienie", 29) \
 .field("wilgotnosc", 25) \
-.time(datetime.utcnow(), WritePrecision.NS)
+.time(datetime.utcnow(), WritePrecision.US)
+print(datetime.utcnow())
 
 write_api.write(bucket, org, point)
 
