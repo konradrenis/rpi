@@ -18,6 +18,8 @@ point = Point("mem1") \
 .time(datetime.utcnow(), WritePrecision.US)
 print(datetime.utcnow())
 
+#xxxxxxx
+
 write_api.write(bucket, org, point)
 
 
