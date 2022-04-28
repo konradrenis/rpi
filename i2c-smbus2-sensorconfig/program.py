@@ -1,4 +1,3 @@
-from re import X
 import RPi.GPIO as GPIO
 import time
 import sys
