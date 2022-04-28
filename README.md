@@ -1,1 +1,1 @@
-# i2c-rpi
+# Raspberry pi 
