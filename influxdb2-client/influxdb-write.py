@@ -17,13 +17,9 @@ point = Point("mem1") \
 .field("wilgotnosc", 25) \
 .time(datetime.utcnow(), WritePrecision.US)
 print(datetime.utcnow())
-<<<<<<< HEAD
-#cos mojego
-=======
 
-#xxxxxxx
 
->>>>>>> 689e0c128cfee097208386a7219aa24a8cf3afb8
+# send
 write_api.write(bucket, org, point)
 
 
