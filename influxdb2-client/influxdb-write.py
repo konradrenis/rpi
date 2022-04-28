@@ -17,7 +17,7 @@ point = Point("mem1") \
 .field("wilgotnosc", 25) \
 .time(datetime.utcnow(), WritePrecision.US)
 print(datetime.utcnow())
-
+#cos mojego
 write_api.write(bucket, org, point)
 
 
