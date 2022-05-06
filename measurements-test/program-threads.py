@@ -36,7 +36,7 @@ try:
         measures = np.empty(shape = [1,4], dtype = np.int16)
 
         #Zbieranie pomiarow
-        for i in range(1000):
+        for i in range(5000):
             measures = np.vstack([measures,read_sensor()])
 
         # Zapisywanie
