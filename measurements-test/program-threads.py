@@ -9,10 +9,8 @@ adr = 0x6a
 GPIO.setmode(GPIO.BCM)
 
 def read_sensor():
-    bef = time.time_ns()
     block = bus.read_i2c_block_data(adr, 0x28, 6)
-    aft = time.time_ns()
-    return np.array([aft-bef, np.int16(block[1] << 8 | block[0]), np.int16(block[3] << 8 | block[2]), np.int16(block[5] << 8 | block[4])])
+    return np.array([time.time_ns(), np.int16(block[1] << 8 | block[0]), np.int16(block[3] << 8 | block[2]), np.int16(block[5] << 8 | block[4])])
 
 def save_txt(arr):
     with open('./measurements-test/data.dat', 'a') as f:
