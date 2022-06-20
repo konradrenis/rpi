@@ -17,8 +17,6 @@ def save_txt(arr):
         np.savetxt(f, arr, fmt='%d')
         f.close()
 
-period:int =  1000000/5*1000*5 #Okres w nanosekundach
-
 
 bus.write_byte_data(adr, 0x01, 0b00000000)  # FUNC_CFG_ACCESS (01h)
 bus.write_byte_data(adr, 0x04, 0b00000001)  # SENSOR_SYNC_TIME_FRAME (04h)
